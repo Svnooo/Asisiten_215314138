@@ -9,18 +9,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
-        body {
-            background-image: url('bg3.png');
-            background-repeat: no-repeat;
-            background-size: cover;
+        .navbar-brand{
+            margin-left: 10px;
         }
+
     </style>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">PENDAFTARAN ASISTEN PRAKTIKUM</a>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+<nav class="navbar navbar-expand-md navbar-dark bg-secondary ">
+        <a class="navbar-brand text-md-start" href="#">PENDAFTARAN ASISTEN PRAKTIKUM</a>
+        <div class="collapse  navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="/asisten">Daftar Nama Asisten</a>
@@ -44,32 +43,36 @@
                 </ul>
         </div>
     </nav>
-    <br><br>
+    <br>
     <div class="container">
-        <div class="p-4 bg-dark text-white rounded">
-            <h1 class="mb-0">SIMPAN DATA ASISTEN PRAKTIKUM</h1>
+        <div class="p-4 bg-secondary text-white rounded">
+            <center>
+            <h3 class="teks mb-0">SIMPAN DATA ASISTEN PRAKTIKUM</h3>
+            </center>
         </div>
         <form action="/asisten/simpan" method="post" class="mt-4">
             <?= csrf_field() ?>
-            <div class="p-4 bg-dark rounded mt-3">
+            <div class="p-4 bg-secondary rounded mt-3">
             <div class="mb-3 mt-3">
-                <label for="nim" class="form-label text-white">NIM</label>
+                <label for="nim" class="form-label text-white">NIM :</label>
                 <input type="text" class="form-control" id="nim" placeholder="Masukkan NIM" name="nim" required>
             </div>
             <div class="mb-3 mt-3">
-                <label for="nama" class="form-label text-white">Nama</label>
+                <label for="nama" class="form-label text-white">Nama :</label>
                 <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama" name="nama" required>
             </div>
             <div class="mb-3 mt-3">
-                <label for="praktikum" class="form-label text-white">Praktikum</label>
+                <label for="praktikum" class="form-label text-white">Praktikum :</label>
                 <input type="text" class="form-control" id="praktikum" placeholder="Masukkan Mata Kuliah Praktikum" name="praktikum" required>
             </div>
             <div class="mb-3 mt-3">
-                <label for="ipk" class="form-label text-white">IPK</label>
+                <label for="ipk" class="form-label text-white">IPK :</label>
                 <input type="text" class="form-control" id="ipk" placeholder="Masukkan IPK" name="ipk" required>
             </div>
             <br>
-            <button type="submit" class="btn btn-success"><i class="fas fa-save"></i> Simpan</button>
+            <center>
+            <button type="submit" class="btn btn-success ">Save</button>
+            </center>
         </form>
     </div>
 

@@ -8,10 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Update Data</title>
+    <style>
+        .navbar-brand{
+            margin-left: 10px;
+        }
+    </style>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark bg-secondary">
         <a class="navbar-brand" href="#">PENDAFTARAN ASISTEN PRAKTIKUM</a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
@@ -40,12 +45,12 @@
     <br><br>
 
     <div class="container">
-        <div class="p-4 bg-dark text-white rounded">
+        <div class="p-4 bg-secondary text-white rounded">
             <h1 class="mb-0">UPDATE DATA ASISTEN</h1>
         </div>
         <form action="/asisten/update" method="post" class="mt-4">
             <?= csrf_field() ?>
-            <div class="p-4 bg-dark rounded mt-3">
+            <div class="p-4 bg-secondary rounded mt-3">
             <div class="mb-3 mt-3">
                 <label for="nim" class="form-label text-white">NIM</label>
                 <input type="text" class="form-control" id="nim" placeholder="Masukkan NIM" name="nim" required>
@@ -63,8 +68,8 @@
                 <input type="text" class="form-control" id="ipk" placeholder="Masukkan IPK" name="ipk" required>
             </div>
             <br>
-            <div class="d-flex justify-content-start">
-            <button type="submit" class="btn btn-info"><i class="fas fa-sync-alt"></i> Update</button>
+            <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-success"><i class="fas fa-sync-alt"></i> Update</button>
             </div>
         </form>
     </div>

@@ -6,16 +6,19 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
-        body {
-            background-image: url('Backround.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
+       .navbar-brand{
+            margin-left: 10px;
         }
+        .navbar-nav{
+            margin-right: 8px;
+        }
+        
+        
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
         <a class="navbar-brand" href="#">PENDAFTARAN ASISTEN PRAKTIKUM</a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
@@ -47,7 +50,7 @@
         <div class="row">
         </div>
 
-        <table class="table mt-4 table-dark">
+        <table class="table mt-4 table-secondary table-striped">
             <thead class="thead-light">
                 <tr>
                     <th>NIM</th>
