@@ -46,7 +46,7 @@
 
     <div class="container">
         <div class="p-4 bg-secondary text-white rounded">
-            <h1 class="mb-0">UPDATE DATA ASISTEN</h1>
+            <h3 class="mb-0  d-flex justify-content-center">UPDATE DATA ASISTEN</h3>
         </div>
         <form action="/asisten/update" method="post" class="mt-4">
             <?= csrf_field() ?>

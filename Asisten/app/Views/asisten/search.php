@@ -15,7 +15,7 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
         <a class="navbar-brand" href="#">PENDAFTARAN ASISTEN PRAKTIKUM</a>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
@@ -43,17 +43,19 @@
     </nav>
     <br><br>
     <div class="container">
-        <div class="p-4 bg-dark text-white rounded">
-            <h1 class="mb-0">PENCARIAN ASISTEN</h1>
+        <div class="p-4 bg-secondary text-white rounded">
+            <h3 class="mb-0 d-flex justify-content-center">PENCARIAN ASISTEN</h3>
         </div>
-        <div class="p-4 bg-dark rounded mt-3">
+        <div class="p-4 bg-secondary rounded mt-3">
             <form action="/asisten/search" method="post" class="mt-4">
                 <?= csrf_field() ?>
                 <div class="form-group">
 
                     <input type="text" class="form-control" id="key" placeholder="Masukkan NIM" name="key" required>
                     <br>
+                    <center>
                     <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i> Cari</button>
+                    </center>
                 </div>
             </form>
             <?php if (!empty($hasil)): ?>
